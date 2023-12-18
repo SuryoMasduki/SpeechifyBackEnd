@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#02DAC5"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#02DAC5"
+            android:fontFamily="@font/jomhuria"
+            android:paddingLeft="15dp"
+            android:text="Speechify"
+            android:textColor="@color/white"
+            android:textSize="76sp">
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#02DAC5"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/speech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Speech to Text"
+            android:fontFamily="@font/jomhuria"
+            android:textColor="@color/white"
+            android:textSize="36sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/say"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Say Something :"
+            android:fontFamily="@font/jomhuria"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/speech">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/mic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/say"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/baseline_mic_24">
+        </ImageButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#02DAC5"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text to Speech"
+            android:fontFamily="@font/jomhuria"
+            android:textColor="@color/white"
+            android:textSize="36sp">
+        </TextView>
+        
+        <EditText
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:layout_below="@+id/text"
+            android:hint="Insert Text here :">
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/submit"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/baseline_play_arrow_24">
+        </ImageButton>
+
+    </RelativeLayout>
+
+</LinearLayout>
